@@ -34,5 +34,38 @@ Want to test this out on your own AWS account? Here is the step-by-step process.
 
 ### Step 1: Backend Setup
 1. Navigate to the backend folder:
-   ```bash
+   ```bash commands
    cd backend
+
+npm install   
+
+create a .env file in the backend root folder and add your AWS Credentials
+
+PORT=5000
+AWS_REGION=us-east-1  # Change to your specific region
+AWS_ACCESS_KEY_ID=your_access_key_here
+AWS_SECRET_ACCESS_KEY=your_secret_key_here
+
+start backend :
+npm run dev
+
+
+step 2:
+Open a new terminal and navigate to the frontend folder:
+cd frontend
+
+install dependecies:
+npm run dev
+
+
+Start the Vite development server:
+npm run dev
+
+Open your browser and navigate to http://localhost:5173. You are good to go!
+
+💡 Future Scope
+Add support for multiple AWS regions simultaneously.
+
+Integrate AWS RDS (Databases) cost tracking.
+
+Add email alerts for unsecured buckets.
