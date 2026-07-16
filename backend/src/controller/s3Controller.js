@@ -70,7 +70,7 @@ try {
             
 bucketReport.push({
     bucketName:bucket.Name,
-    creationDate:bucket.creationDate,
+    creationDate:bucket.CreationDate,
     sizeMb:sizeInmb+"MB",
     securityStatus:isPbulic?"Warning public unsecure":"Secure|private"
 
